@@ -17,41 +17,40 @@
   display: flex;
   flex-direction: column;
 }
+
 .first-content__menu {
-  width: 31.7px;
+  width: 37px;
   height: 22px;
   background-color: $blue-color;
-  position: absolute;
-  top: 0;
   padding: 5px;
+  position: fixed;
+  top: 0;
 }
 .first-content__baground {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 90vh;
   display: block;
 }
+
 .first-content__title {
   color: $white-color;
   font-family: $first-font;
-  margin: 300.3px 0 60.9px 3px;
+  margin: 280.3px 10px 10px 10px;
   position: absolute;
   font-size: 42px;
   text-align: center;
   text-transform: uppercase;
+  font-weight: bold;
+  word-spacing: 40px;
 }
 .first-content__text {
   color: $white-color;
   position: absolute;
-  font-size: 17px;
-  margin-top: 400px;
-  margin-left: 37px;
-  margin-right: 42.8px;
+  font-size: 16px;
+  margin: 400px 41.4px 35.2px 53.9px;
   top: 15px;
-  line-height: 1.19;
+  padding: 2px;
   text-align: center;
-  letter-spacing: normal;
-  flex-grow: 0;
-  word-spacing: 3px;
 }
 .first-content__scroll {
   position: absolute;
@@ -59,11 +58,13 @@
   background-color: $white-color;
   border-radius: 50%;
   margin: 470px;
-  margin-left: 137px;
+  margin-left: 140px;
   height: 37.9px;
+  flex-grow: 0;
 }
 .second-content {
   margin-top: 70px;
+  margin-bottom: 70px;
 }
 .second-content__text {
   color: $lightblue-color;
@@ -106,10 +107,7 @@
 }
 .third-content {
   background-color: $lightblue-color;
-  height: 100vh;
-  width: 100vw;
   display: grid;
-  column-gap: 50px;
   grid-template-columns: 1fr;
   justify-items: center;
 }
@@ -120,6 +118,8 @@
   letter-spacing: normal;
   text-align: center;
   margin-top: 29px;
+  text-transform: uppercase;
+  font-family: $first-font;
 }
 .third-content__titles {
   font-size: 18px;
@@ -129,6 +129,8 @@
   line-height: 1.67;
   letter-spacing: normal;
   text-align: center;
+  font-family: $first-font;
+  margin-top: 40px;
 }
 
 .third-content__info {
@@ -141,13 +143,14 @@
   text-align: center;
   margin-left: 70px;
   margin-right: 70px;
+  font-family: $secon-font;
 }
 .btn {
   background-color: $orange-color;
   width: 184px;
   height: 45px;
   flex-grow: 0;
-  margin: 0 0 10px;
+  margin: 40px 0 10px;
   border-radius: 22.5px;
   border: none;
 }
@@ -207,4 +210,106 @@
   line-height: 2.14;
   text-align: center;
   margin-bottom: 36px;
+}
+@media (min-width: 768px) {
+  .first-content__baground {
+    width: 100vw;
+    height: 100vh;
+  }
+  .first-content__title {
+    margin: 230px 0 20px 36.8px;
+    font-size: 80px;
+  }
+  .first-content__text {
+    font-size: 24px;
+    width: 40%;
+    margin-top: 600px;
+    margin: 430px 155.9px 34px 220px;
+  }
+  .first-content__scroll {
+    margin: 520px 304.2px 0 350.4px;
+  }
+  .second-content {
+    margin-left: 39px;
+    margin-right: 60px;
+  }
+  .second-content__title {
+    font-size: 26px;
+  }
+  .second-content__text2 {
+    font-size: 20px;
+  }
+  .second-content__rectangle {
+    width: 91px;
+    height: 45px;
+    flex-grow: 0;
+    margin: 5px 15px 10px;
+  }
+  .second-content__rectangle--text {
+    margin: 1px 32.5px 0 33.5px;
+    font-size: 20px;
+  }
+
+  .third-content {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    display: grid;
+    grid-template-areas:
+      "header header header header header header"
+      "left left center center right right";
+    align-content: space-evenly;
+    align-items: start;
+  }
+  .third-content__text {
+    grid-area: header;
+    font-size: 26px;
+    margin-top: 36px;
+  }
+  .third-content__aside1 {
+    grid-area: left;
+  }
+  .third-content__aside2 {
+    grid-area: center;
+  }
+  .third-content__aside3 {
+    grid-area: right;
+  }
+  .third-content__titles {
+    font-size: 24px;
+  }
+
+  .third-content__info {
+    font-size: 20px;
+    margin: 18px 0 0;
+  }
+  .aside2 {
+    position: absolute;
+    left: 250px;
+  }
+  .btn {
+    margin-left: 100px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .footer__nav {
+    margin: 30px;
+    text-align: justify;
+  }
+  .footer__nav2 {
+    margin: 30px;
+    text-align: justify;
+  }
+  .footer__copy {
+    left: -100px;
+    bottom: -870px;
+    position: absolute;
+  }
+  .footer__components {
+    left: 40px;
+    bottom: -940px;
+    position: absolute;
+  }
 }
