@@ -27,7 +27,7 @@
 }
 .first-content__baground {
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   padding-top: 0;
 }
 .first-content__title {
@@ -39,6 +39,7 @@
   position: absolute;
   font-weight: bold;
   font-size: 42px;
+  text-transform: uppercase;
 }
 .first-content__text {
   color: $white-color;
@@ -71,8 +72,106 @@
 .second-content__text2 {
   font-size: 18px;
   color: $gray-color;
-  align: left;
-  margin: 20px 0 26px;
+  align-items: left;
+  margin: 15px 15px 15px 15px;
   line-height: 1.67;
   padding: 2px;
+}
+.second-content__rectangle {
+  width: 76px;
+  height: 45px;
+  border: solid 2px $orange-color;
+  border-radius: 22.5px;
+  flex-grow: 0;
+  margin: 10px 10px;
+}
+.second-content__rectangle--text {
+  width: 25px;
+  height: 45px;
+  margin: 1px 25px 0 26px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: $orange-color;
+}
+.third-content {
+  background-color: $lightblue-color;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+.third-content__text {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  margin-top: 29px;
+}
+.third-content__titles {
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+}
+.third-content__aside1 {
+}
+.third-content__aside2 {
+}
+.third-content__aside3 {
+}
+.third-content__info {
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.btn {
+  background-color: $orange-color;
+  width: 184px;
+  height: 45px;
+  flex-grow: 0;
+  margin: 0 0 10px;
+  border-radius: 22.5px;
+  border: none;
+}
+.btn-text {
+  color: $white-color;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.25;
+  letter-spacing: normal;
+  text-align: center;
+}
+.footer {
+  background-color: $darkblue-color;
+  display: flex;
+  flex-direction: column;
+}
+.footer__nav {
+  color: $white-color;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
