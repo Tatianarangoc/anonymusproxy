@@ -20,42 +20,50 @@
 .first-content__menu {
   width: 31.7px;
   height: 22px;
-  color: $blue-color;
+  background-color: $blue-color;
   position: absolute;
-  top: 0 2px;
-  padding: 2px;
+  top: 0;
+  padding: 5px;
 }
 .first-content__baground {
   width: 100vw;
-  height: 70vh;
-  padding-top: 0;
+  height: 100vh;
+  display: block;
 }
 .first-content__title {
   color: $white-color;
-  line-height: 1.31;
-  text-align: center;
-  font-family: $font-main;
-  margin: 280.3px 0 60.9px 3px;
+  font-family: $first-font;
+  margin: 300.3px 0 60.9px 3px;
   position: absolute;
-  font-weight: bold;
   font-size: 42px;
+  text-align: center;
   text-transform: uppercase;
 }
 .first-content__text {
   color: $white-color;
   position: absolute;
-  font-size: 16px;
-  margin: 400px 0 60.9px 70px;
+  font-size: 17px;
+  margin-top: 400px;
+  margin-left: 37px;
+  margin-right: 42.8px;
+  top: 15px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: normal;
+  flex-grow: 0;
+  word-spacing: 3px;
 }
 .first-content__scroll {
   position: absolute;
   padding: 14.8px 10.1px 12.6px;
   background-color: $white-color;
   border-radius: 50%;
-  margin: 430px 150px;
+  margin: 470px;
+  margin-left: 137px;
+  height: 37.9px;
 }
 .second-content {
-  margin-top: 56px;
+  margin-top: 70px;
 }
 .second-content__text {
   color: $lightblue-color;
@@ -66,7 +74,7 @@
 }
 .second-content__title {
   font-size: 24px;
-  font-family: $font-main;
+  font-family: $first-font;
   margin: 7px 15px 15px;
 }
 .second-content__text2 {
@@ -122,12 +130,7 @@
   letter-spacing: normal;
   text-align: center;
 }
-.third-content__aside1 {
-}
-.third-content__aside2 {
-}
-.third-content__aside3 {
-}
+
 .third-content__info {
   font-size: 18px;
   font-weight: normal;
@@ -174,4 +177,34 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
+  margin-top: 65px;
+  margin-bottom: 0;
+}
+.footer__nav2 {
+  color: $white-color;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.footer__copy {
+  color: $white-color;
+  margin-top: 32px;
+  margin-left: 140px;
+  margin-right: 122px;
+}
+.footer__components {
+  color: $white-color;
+  font-family: $secon-font;
+  font-size: 14px;
+  line-height: 2.14;
+  text-align: center;
+  margin-bottom: 36px;
 }
