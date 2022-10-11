@@ -16,6 +16,5 @@ Esta es la evaluación final del primer modulo (Maquetacion) del bootmcamp de Ad
 1. El botón de hamburguesa es un enlace a la pagina de Adalab.
 1. El botón de flecha del módulo hero enlaza la sección "3 Reasons To Purchase".
 1. Todos los links del footer van a la pagina  https://adalab.es.
-
 1.El hover de los botones Go y  "3 Reasons To Purchase" tienen una transformacion y una transition.`
 
