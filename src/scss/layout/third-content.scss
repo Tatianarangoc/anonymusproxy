@@ -51,13 +51,6 @@
   margin: 2em;
   border: none;
   margin-bottom: 50px;
-  transition: width 1s;
-  width: 184px;
-  height: 45px;
-  &:hover {
-    width: 200px;
-    height: 100px;
-  }
 }
 
 .btn-text {
@@ -118,39 +111,6 @@
     width: 184px;
     height: 45px;
     background-color: $orange-color;
-    position: relative;
-    animation-name: example;
-    animation-duration: 4s;
-    &-text {
-      text-decoration: none;
-    }
-  }
-  @keyframes example {
-    0% {
-      background-color: $orange-color;
-      left: 0px;
-      top: 0px;
-    }
-    25% {
-      background-color: $orange-color;
-      left: 20px;
-      top: 0px;
-    }
-    50% {
-      background-color: $orange-color;
-      left: 20px;
-      top: 200px;
-    }
-    75% {
-      background-color: $orange-color;
-      left: 0px;
-      top: 200px;
-    }
-    100% {
-      background-color: $orange-color;
-      right: 0px;
-      top: 0px;
-    }
   }
 }
 @media all and (min-width: 1280px) {
