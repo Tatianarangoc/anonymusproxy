@@ -46,13 +46,19 @@
 }
 .btn {
   background-color: $orange-color;
-  width: 184px;
-  height: 45px;
   border-radius: 22.5px;
   margin: 2em;
   border: none;
   margin-bottom: 50px;
+  transition: width 1s;
+  width: 184px;
+  height: 45px;
 }
+.btn:hover {
+  width: 200px;
+  height: 100px;
+}
+
 .btn-text {
   color: $white-color;
   font-size: 20px;
@@ -64,6 +70,9 @@
   text-align: center;
   text-decoration: none;
   text-transform: capitalize;
+}
+.btn-text:hover {
+  font-size: 25px;
 }
 
 @media all and (min-width: 768px) {
@@ -104,6 +113,39 @@
   .btn {
     align-items: center;
     margin-left: 2em;
+    width: 184px;
+    height: 45px;
+    background-color: $orange-color;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  @keyframes example {
+    0% {
+      background-color: $orange-color;
+      left: 0px;
+      top: 0px;
+    }
+    25% {
+      background-color: $orange-color;
+      left: 20px;
+      top: 0px;
+    }
+    50% {
+      background-color: $orange-color;
+      left: 20px;
+      top: 200px;
+    }
+    75% {
+      background-color: $orange-color;
+      left: 0px;
+      top: 200px;
+    }
+    100% {
+      background-color: $orange-color;
+      right: 0px;
+      top: 0px;
+    }
   }
   .btn-text {
     text-decoration: none;
