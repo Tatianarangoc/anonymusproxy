@@ -63,4 +63,67 @@
   letter-spacing: normal;
   text-align: center;
   text-decoration: none;
+  text-transform: capitalize;
+}
+
+@media all and (min-width: 768px) {
+  .third-content {
+    grid-template-columns: auto auto auto auto;
+    display: grid;
+    grid-template-areas:
+      "header header header header header header"
+      "left left center center right right";
+
+    align-content: space-evenly;
+    align-items: start;
+    column-gap: 2px;
+  }
+  .third-content__text {
+    grid-area: header;
+    font-size: 24px;
+    margin-top: 36px;
+    line-height: 1.73;
+  }
+  .third-content__aside1 {
+    grid-area: left;
+  }
+  .third-content__aside2 {
+    grid-area: center;
+  }
+  .third-content__aside3 {
+    grid-area: right;
+  }
+  .third-content__titles {
+    font-size: 22px;
+  }
+  .third-content__info {
+    text-align: justify;
+    width: 70%;
+    margin-left: 2em;
+  }
+  .btn {
+    align-items: center;
+    margin-left: 2em;
+  }
+  .btn-text {
+    text-decoration: none;
+  }
+}
+@media all and (min-width: 1280px) {
+  .third-content__text {
+    font-size: 29px;
+  }
+  .third-content__titles {
+    font-size: 24px;
+  }
+  .third-content__info {
+    font-size: 19px;
+  }
+  .btn {
+    width: 255px;
+    height: 45px;
+    flex-grow: 0;
+    margin-top: 7em;
+    border-radius: 22.5px;
+  }
 }

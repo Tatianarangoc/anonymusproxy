@@ -8,6 +8,7 @@
   line-height: 2.14px;
   text-align: left;
   margin: 37px 15px 15px;
+  text-transform: capitalize;
 }
 .second-content__title {
   font-size: 24px;
@@ -49,5 +50,27 @@
   .second-content__text2 {
     font-size: 20px;
     word-spacing: 3px;
+  }
+}
+@media all and (min-width: 1280px) {
+  .second-content {
+    flex-grow: 0;
+    padding: 1px 275px 1px;
+    background-color: var(--white);
+  }
+  .second-content__text {
+    font-size: 16px;
+  }
+  .second-content__rectangle {
+    width: 160px;
+    height: 45px;
+    flex-grow: 0;
+    margin: 0 0 10px;
+  }
+  .second-content__rectangle--text {
+    margin: 1px 67px 0 68px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2.25;
   }
 }
