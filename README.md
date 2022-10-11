@@ -4,9 +4,7 @@
 Esta es la evaluación final del primer modulo (Maquetacion) del bootmcamp de Adalbab **.
 
 
-Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. El Kit nos ayuda a trabajar más cómodamente, nos automatiza tareas.
-
-En el Kit hay 3 tipos de ficheros y carpetas:
+##Se realizo con:
 
 - Sass.
 -flexbox y CSS Grid.
