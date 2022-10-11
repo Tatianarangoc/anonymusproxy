@@ -1,15 +1,16 @@
 .second-content {
   margin-top: 70px;
   margin-bottom: 70px;
+  &__text {
+    color: $blue-color;
+    font-size: 14px;
+    line-height: 2.14px;
+    text-align: left;
+    margin: 37px 15px 15px;
+    text-transform: capitalize;
+  }
 }
-.second-content__text {
-  color: $blue-color;
-  font-size: 14px;
-  line-height: 2.14px;
-  text-align: left;
-  margin: 37px 15px 15px;
-  text-transform: capitalize;
-}
+
 .second-content__title {
   font-size: 24px;
   font-family: $first-font;
@@ -32,22 +33,23 @@
   margin: 10px 10px;
   background-color: $white-color;
   transition: width 2s, height 2s, transform 2s;
+  &--text {
+    width: 25px;
+    height: 45px;
+    margin: 1px 25px 0 26px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2.25;
+    letter-spacing: normal;
+    text-align: center;
+    color: $orange-color;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+  }
 }
-.second-content__rectangle--text {
-  width: 25px;
-  height: 45px;
-  margin: 1px 25px 0 26px;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 2.25;
-  letter-spacing: normal;
-  text-align: center;
-  color: $orange-color;
-  transition-property: width;
-  transition-duration: 2s;
-  transition-timing-function: linear;
-  transition-delay: 1s;
-}
+
 .second-content__rectangle:hover {
   width: 100px;
   height: 80px;
@@ -57,10 +59,10 @@
 @media all and (min-width: 768px) {
   .second-content__title {
     font-size: 26px;
-  }
-  .second-content__text2 {
-    font-size: 20px;
-    word-spacing: 3px;
+    &__text2 {
+      font-size: 20px;
+      word-spacing: 3px;
+    }
   }
 }
 @media all and (min-width: 1280px) {
@@ -68,20 +70,21 @@
     flex-grow: 0;
     padding: 1px 275px 1px;
     background-color: var(--white);
+    &__text {
+      font-size: 16px;
+    }
   }
-  .second-content__text {
-    font-size: 16px;
-  }
+
   .second-content__rectangle {
     width: 160px;
     height: 45px;
     flex-grow: 0;
+    &--text {
+      margin: 1px 67px 0 68px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 2.25;
+    }
     margin: 0 0 10px;
-  }
-  .second-content__rectangle--text {
-    margin: 1px 67px 0 68px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 2.25;
   }
 }

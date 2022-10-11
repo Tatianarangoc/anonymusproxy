@@ -3,12 +3,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  &arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
-.arrow {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 .footer__arrow {
   width: 2.313em;
   height: 2.313em;

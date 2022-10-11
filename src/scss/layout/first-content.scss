@@ -6,16 +6,16 @@
   height: 100vh;
   background-position: 50%;
   background-image: url("../images/cover.jpeg");
+  &__menu {
+    width: 37px;
+    height: 22px;
+    background-color: $blue;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+  }
 }
 
-.first-content__menu {
-  width: 37px;
-  height: 22px;
-  background-color: $blue;
-  padding: 5px;
-  position: fixed;
-  top: 0;
-}
 .first-content--div {
   display: flex;
   flex-direction: column;
