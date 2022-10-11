@@ -38,13 +38,18 @@
   margin-right: 70px;
   font-family: $secon-font;
 }
+.section__btn {
+  background-color: #eff9ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .btn {
   background-color: $orange-color;
   width: 184px;
   height: 45px;
-  flex-grow: 0;
-  margin: 40px 0 10px;
   border-radius: 22.5px;
+  margin: 2em;
   border: none;
   margin-bottom: 50px;
 }
@@ -57,4 +62,5 @@
   line-height: 2.25;
   letter-spacing: normal;
   text-align: center;
+  text-decoration: none;
 }

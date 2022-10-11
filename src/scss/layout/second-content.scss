@@ -3,7 +3,7 @@
   margin-bottom: 70px;
 }
 .second-content__text {
-  color: $lightblue-color;
+  color: $blue-color;
   font-size: 14px;
   line-height: 2.14px;
   text-align: left;
@@ -23,7 +23,7 @@
   padding: 2px;
 }
 .second-content__rectangle {
-  width: 76px;
+  width: 86px;
   height: 45px;
   border: solid 2px $orange-color;
   border-radius: 22.5px;
@@ -41,4 +41,13 @@
   letter-spacing: normal;
   text-align: center;
   color: $orange-color;
+}
+@media all and (min-width: 768px) {
+  .second-content__title {
+    font-size: 26px;
+  }
+  .second-content__text2 {
+    font-size: 20px;
+    word-spacing: 3px;
+  }
 }
