@@ -1,0 +1,28 @@
+.new-section {
+  background-color: $darkblue-color;
+  color: $white-color;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.new-section__title {
+  text-align: center;
+  margin-top: 1em;
+}
+.new-section__plan {
+  margin: 2em;
+  display: flex;
+  flex-direction: row;
+}
+.new-section__plan--text {
+  margin: 2em;
+}
+@media all and (min-width: 780px) {
+  .new-section__plan {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .new-section {
+    flex-direction: column;
+  }
+}
